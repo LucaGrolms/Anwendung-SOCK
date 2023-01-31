@@ -1,5 +1,5 @@
 # Aufgabenstellung
-Aus den vorliegenden Subject Scans, welche nach Patienten und Gesunde unterteilt vorliegen, sollte im ersten Step eine ICA pro Subject durchgeführt werden. Je Subject liegen 590 spezifische NIFTI images files (.nii) vor. 
+Aus den vorliegenden Subject Scans, welche nach Patienten und Gesunde unterteilt vorliegen, sollte im ersten Step eine ICA pro Subject durchgeführt werden. Je Subject liegen 590 spezifische NIFTI Images files (.nii) vor. 
 
 Für die Durchführung der ICA wurde aus der FSL Toolbox das Tool "melodic" ausgewählt.
 Beispielhaft wird eine ICA melodic Aufruf wie folgt ausgeführt:
@@ -13,7 +13,7 @@ Hierfür kann aus dem FSL Toolset das Tool "fslmerge" genutzen werden. Beispielh
 ~~~
  fslmerge -t FWHM_8_img_sub-1017.nii FWHM_8_img_001.nii FWHM_8_img_002.nii ... FWHM_8_img_590.nii
 ~~~
-Hierbei müssen aber alle 3D filenames expliziet angegeben werden, das "..." ist nicht erlaubt, dient hier nur der Verdeutlichung. Um alle relevanten files in einem folder einfacher ermitteln zu können, stellt FSL ein weiteres Tool "imglob" bereit. imglob listet alle Image files in einem Folder mit ihren Namen auf.
+Hierbei müssen aber alle 3D filenames expliziet angegeben werden, das "..." ist nicht erlaubt, dient hier nur der Verdeutlichung. Um alle relevanten Files in einem folder einfacher ermitteln zu können, stellt FSL ein weiteres Tool "imglob" bereit. imglob listet alle Image-Files in einem Folder mit ihren Namen auf.
 ~~~
 imglob *
 ~~~
@@ -172,7 +172,7 @@ Die eingesetzte Matlab "kmeans" Funktion erforderte die zusätzliche Installatio
 ~~~   
 
 # SPM 12
-Für die weitere Verabeitung der Denoised Images in SPM ist es notwendig, die relevanten Images im 3D NIFTI Format (.nii) vorliegen zu haben. SPM ist aktuell nicht in der Lage .nii.gz Files zu verarbeiten. Der Standard-Ablauf in SOCK erzeugt aus dem denoised 4D Image am Ende wieder die separierten 3D Images, hier aber als .img und .hdr files. 
+Für die weitere Verabeitung der Denoised Images in SPM ist es notwendig, die relevanten Images im 3D NIFTI Format (.nii) vorliegen zu haben. SPM ist aktuell nicht in der Lage .nii.gz Files zu verarbeiten. Der Standard-Ablauf in SOCK erzeugt aus dem denoised 4D Image am Ende wieder die einzelnen 3D Images, hier aber als .img und .hdr files. 
 Damit aus dem 4D Denoised Image am Ende dann die relevanten NIFTI-files erzeugt werden, wurde eine weitere Anpassung in batchSOCK.m vorgenommen.
 Der OUTPUT_NIFTI_PAIR Wert 2 wurde neu eingeführt und die Fuktionalität entsprechend erweitert. Es werden hierdurch 3D .nii.gz files erzeugt und entpackt und keine .img und .hdr files.
 ~~~matlab
