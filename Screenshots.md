@@ -1,3 +1,4 @@
+### Gesamtdurchlauf SOCK
 
 ![batchSOCK_1](https://user-images.githubusercontent.com/83179199/215833579-e3008c14-5923-400b-8f7e-1c3ccf686bb9.PNG)
 ![batchSOCK_2](https://user-images.githubusercontent.com/83179199/215833595-fe9be956-7d4f-4a35-8df4-b812d24e54a7.PNG)
@@ -9,5 +10,8 @@
 ![batchSOCK_8](https://user-images.githubusercontent.com/83179199/215833657-35a7f949-b652-4c09-90b3-8b15cd0544e6.PNG)
 ![batchSOCK_9](https://user-images.githubusercontent.com/83179199/215833665-0fe855e5-164c-4a26-93cf-c70e3342bb5e.PNG)
 ![batchSOCK_10](https://user-images.githubusercontent.com/83179199/215833679-3cabe47b-3dc9-488c-9962-ae51b8f8e564.PNG)
+
+### Error Message bezüglich falschem Format der Report Values
+
 ![batchSOCK_Error_1](https://user-images.githubusercontent.com/83179199/215833688-5b78860b-41e0-4bbe-91b2-5c6540333e6f.PNG)
 ![batchSOCK_Error_2](https://user-images.githubusercontent.com/83179199/215833697-9fc1fcd6-3d9e-44be-9916-ab4b35439375.PNG)
